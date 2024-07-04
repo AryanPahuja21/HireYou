@@ -46,7 +46,9 @@ const Navbar = () => {
     >
       <div className="flex justify-between items-center p-4">
         <div className="flex items-center">
-          <h1 className="text-2xl text-blue-500 font-bold ml-2">Hire You</h1>
+          <h1 className="text-2xl text-blue-500 font-bold ml-2">
+            Hire<span className="text-blue-800">You</span>
+          </h1>
         </div>
         <ul className="flex">
           {navLinks.map((link) => (
