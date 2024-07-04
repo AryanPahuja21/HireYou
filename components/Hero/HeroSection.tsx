@@ -7,7 +7,7 @@ const HeroSection = () => {
         Your Ultimate Platform for Fast AI Interviews and Comprehensive
         Assessments
       </h3>
-      <p className="mt-3 font-semibold">
+      <p className="mt-3 font-semibold text-center">
         Join HireYou and experience the future of hiring
       </p>
       <HeroButton>Get Started</HeroButton>
