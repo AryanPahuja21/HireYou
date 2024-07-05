@@ -10,7 +10,7 @@ const HeroSection = () => {
       <p className="mt-3 font-semibold text-center">
         Join HireYou and experience the future of hiring
       </p>
-      <HeroButton>Get Started</HeroButton>
+      <HeroButton href="/join">Get Started</HeroButton>
     </main>
   );
 };
