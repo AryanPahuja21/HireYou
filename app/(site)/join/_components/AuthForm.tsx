@@ -2,6 +2,7 @@
 
 import Button from "@/app/_components/Button";
 import Input from "@/app/_components/inputs/Input";
+import { useRouter } from "next/navigation";
 import { useState } from "react";
 import { FieldValues, useForm } from "react-hook-form";
 
@@ -10,6 +11,8 @@ type variant = "LOGIN" | "REGISTER";
 const AuthForm = () => {
   const [variant, setVariant] = useState<variant>("LOGIN");
   const [isLoading, setIsLoading] = useState(false);
+
+  const router = useRouter();
 
   const toggleVariant = () => {
     setVariant((prev) => (prev === "LOGIN" ? "REGISTER" : "LOGIN"));
@@ -55,7 +58,12 @@ const AuthForm = () => {
             errors={errors}
           />
           <div>
-            <Button disabled={isLoading} fullWidth type="submit">
+            <Button
+              onClick={() => router.push("/dashboard")}
+              disabled={isLoading}
+              fullWidth
+              type="submit"
+            >
               {variant === "LOGIN" ? "Sign in" : "Register"}
             </Button>
           </div>
