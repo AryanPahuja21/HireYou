@@ -34,9 +34,11 @@ const AdminNavbar = () => {
     >
       <div className="container mx-auto flex justify-between items-center">
         <div className="flex items-center">
-          <h1 className="text-2xl text-blue-500 font-bold ml-2">
-            Hire<span className="text-blue-800">You</span>
-          </h1>
+          <Link href="/dashboard">
+            <h1 className="text-2xl text-blue-500 font-bold ml-2">
+              Hire<span className="text-blue-800">You</span>
+            </h1>
+          </Link>
         </div>
         <button
           onClick={() => setIsMenuOpen(!isMenuOpen)}
